@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/dest.ico</file>
+        <file>img/src.ico</file>
+        <file>img/about.ico</file>
+        <file>img/copy.ico</file>
+        <file>img/developer.ico</file>
+    </qresource>
+    <qresource prefix="/icon">
+        <file>icon/icon.ico</file>
+    </qresource>
+</RCC>

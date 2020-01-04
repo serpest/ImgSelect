@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>ImgSelect</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../res/res.qrc">
+    <normaloff>:/icon/icon/icon.ico</normaloff>:/icon/icon/icon.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="selectedPicturesNumber">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="picturesNumber">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QListWidget" name="imageList">
+      <property name="textElideMode">
+       <enum>Qt::ElideMiddle</enum>
+      </property>
+      <property name="movement">
+       <enum>QListView::Free</enum>
+      </property>
+      <property name="viewMode">
+       <enum>QListView::IconMode</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionSource"/>
+   <addaction name="actionDestination"/>
+   <addaction name="separator"/>
+   <addaction name="actionCopy"/>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionImgSelect"/>
+    <addaction name="actionDeveloper"/>
+   </widget>
+   <widget class="QMenu" name="menuLocations">
+    <property name="title">
+     <string>Locations</string>
+    </property>
+    <addaction name="actionSource"/>
+    <addaction name="actionDestination"/>
+   </widget>
+   <widget class="QMenu" name="menuOperations">
+    <property name="title">
+     <string>Operations</string>
+    </property>
+    <addaction name="actionCopy"/>
+   </widget>
+   <addaction name="menuLocations"/>
+   <addaction name="menuOperations"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <action name="actionDestination">
+   <property name="icon">
+    <iconset resource="../res/res.qrc">
+     <normaloff>:/img/img/dest.ico</normaloff>:/img/img/dest.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Destination</string>
+   </property>
+  </action>
+  <action name="actionSource">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../res/res.qrc">
+     <normaloff>:/img/img/src.ico</normaloff>:/img/img/src.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Source</string>
+   </property>
+   <property name="autoRepeat">
+    <bool>true</bool>
+   </property>
+   <property name="visible">
+    <bool>true</bool>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::TextHeuristicRole</enum>
+   </property>
+   <property name="priority">
+    <enum>QAction::NormalPriority</enum>
+   </property>
+  </action>
+  <action name="actionDeveloper">
+   <property name="icon">
+    <iconset resource="../res/res.qrc">
+     <normaloff>:/img/img/developer.ico</normaloff>:/img/img/developer.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Developer</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="icon">
+    <iconset resource="../res/res.qrc">
+     <normaloff>:/img/img/copy.ico</normaloff>:/img/img/copy.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Copy</string>
+   </property>
+  </action>
+  <action name="actionImgSelect">
+   <property name="icon">
+    <iconset resource="../res/res.qrc">
+     <normaloff>:/img/img/about.ico</normaloff>:/img/img/about.ico</iconset>
+   </property>
+   <property name="text">
+    <string>ImgSelect</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../res/res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
