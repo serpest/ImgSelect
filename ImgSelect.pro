@@ -12,7 +12,7 @@ HEADERS += \
 SOURCES += \
     src/model/copymanagement.cpp \
     src/model/direxception.cpp \
-    src/view/main.cpp \
+    src/main.cpp \
     src/view/mainwindow.cpp
 
 FORMS += \
